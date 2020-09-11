@@ -7,7 +7,8 @@
     "mars": "./bin/mars.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "coverage": "nyc npm run test",
     "eslint": "eslint ./lib --fix"
   },
   "keywords": [],
@@ -15,8 +16,10 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "assert": "^2.0.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
     "chalk": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "commander": "^6.1.0",
@@ -34,6 +37,7 @@
     "glob-all": "^3.2.1",
     "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^4.4.1",
+    "jest": "^26.4.2",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
     "mini-css-extract-plugin": "^0.11.1",
