@@ -1,10 +1,10 @@
 {
-  "name": "mars-cli",
+  "name": "none-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "mars": "./bin/mars.js"
+    "none": "./bin/none.js"
   },
   "scripts": {
     "test": "mocha",
