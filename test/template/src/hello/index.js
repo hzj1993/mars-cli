@@ -1,4 +1,4 @@
-function index() {
+function index () {
   console.log('hello')
 }
 

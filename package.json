@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "smoke": "node test/smoke/index.js",
     "coverage": "nyc npm run test",
     "eslint": "eslint ./lib --fix",
     "commitmsg": "validate-commit-msg",
