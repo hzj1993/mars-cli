@@ -7,8 +7,8 @@ const mocha = new Mocha({
     timeout: '10000ms'
 })
 
-process.chdir(path.join(__dirname, 'template'));
-
+process.chdir(path.join(__dirname, '../template'));
+console.log('==============', path.join(__dirname, '../template'))
 rimraf('./dist', () => {
    const prodConfig = require('../../lib/webpack.prod');
 

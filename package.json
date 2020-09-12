@@ -9,7 +9,9 @@
   "scripts": {
     "test": "mocha",
     "coverage": "nyc npm run test",
-    "eslint": "eslint ./lib --fix"
+    "eslint": "eslint ./lib --fix",
+    "commitmsg": "validate-commit-msg",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
     "chalk": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "commander": "^6.1.0",
+    "conventional-changelog-cli": "^2.1.0",
     "css-loader": "^4.3.0",
     "download-git-repo": "^3.0.2",
     "eslint": "^7.8.1",
@@ -37,6 +40,7 @@
     "glob-all": "^3.2.1",
     "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^4.4.1",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
     "less": "^3.12.2",
     "less-loader": "^7.0.1",
@@ -45,6 +49,7 @@
     "postcss": "^7.0.32",
     "postcss-loader": "^4.0.1",
     "rimraf": "^3.0.2",
+    "validate-commit-msg": "^2.14.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-merge": "^5.1.4"
