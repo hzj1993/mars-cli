@@ -4,7 +4,7 @@ const program = require('commander')
 program.version(require('../package.json').version)
 
 program
-  .command('init <name>')
+  .command('init <app-name>')
   .description('init project')
   .action(require('../lib/cli-init/index'))
 
@@ -12,17 +12,13 @@ program
   .command('dev')
   .description('run a server for current project')
   .option('-o, --open', 'Open brower')
-  .action((cmd) => {
-    console.log('cmd', cmd)
-  })
+  .action(require('../lib/cli-server/index'))
 
 program
   .command('build')
   .description('build the project')
   .option('-d, --dest <dir>', 'output directory (default: dist)')
-  .action((cmd) => {
-    console.log('cmd', cmd)
-  })
+  .action(require('../lib/cli-build/index'))
 
 program
   .command('test')
@@ -37,9 +33,7 @@ program
   .option('-a, --amend', 'git add all files but ignore .idea/ and commit amend')
   .option('-p, --push <branch>', 'git push branch (default: current branch)')
   .option('-m, --message <message>', 'git commit message')
-  .action((cmd) => {
-    console.log('cmd', cmd)
-  })
+  .action(require('../lib/cli-commit/index'))
 
 program.parse(process.argv)
 
