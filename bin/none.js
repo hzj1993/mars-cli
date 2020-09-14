@@ -18,7 +18,13 @@ program
   .command('build')
   .description('build the project')
   .option('-d, --dest <dir>', 'output directory (default: dist)')
+  .option('-m, --measure', 'measure building time and bundle size')
   .action(require('../lib/cli-build/index'))
+
+program
+  .command('dll')
+  .description('use DllPlugin to compile the project')
+  .action(require('../lib/cli-dll/index'))
 
 program
   .command('test')
