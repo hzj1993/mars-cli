@@ -12,6 +12,7 @@ program
   .command('dev')
   .description('run a server for current project')
   .option('-o, --open', 'Open brower')
+  .option('-simple, --simple', 'Use simple dev server')
   .action(require('../lib/cli-server/index'))
 
 program
