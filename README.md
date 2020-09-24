@@ -14,15 +14,7 @@
 
 ```
 
-    git clone https://github.com/jjaimm/mars-cli.git
-
-```
-
-```
-
-    npm install
-
-    npm link
+    npm install none-cli
 
 ```
 
@@ -73,37 +65,3 @@
     none commit
 
 ```
-
-## 目录设计
-
-- lib
-    - webpack.base.js
-        - 资源解析
-        - css前缀处理
-        - 构建文件清理
-        - 日志信息提示优化
-        - HTML模板文件生成
-        - eslint
-        - 多页面打包
-        - resolve配置优化，减少模块查找时间
-        - 引入缓存优化打包速度
-        - 移除无用css
-        - 多线程打包
-    
-    - webpack.dev.js
-        - 热更新
-        - sourcemap
-    
-    - webpack.prod.js
-        - 体积优化
-        - 构建速度优化
-        - 文件指纹
-        - tree-shaking
-        - scope hoisting
-    
-    - webpack.ssr.js
-
-- test
-    - smoke 冒烟测试目录
-    - unit 单元测试代码文件
-
