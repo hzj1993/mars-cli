@@ -2,3 +2,4 @@
 /.idea
 /.nyc_output
 /.vscode
+/test/dev-template/node_modules
