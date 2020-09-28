@@ -46,6 +46,7 @@
     "glob": "^7.1.6",
     "glob-all": "^3.2.1",
     "hard-source-webpack-plugin": "^0.13.1",
+    "hash-sum": "^2.0.0",
     "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^4.4.1",
     "husky": "^4.3.0",
