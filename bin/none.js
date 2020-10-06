@@ -13,6 +13,7 @@ program
   .description('run a server for current project')
   .option('-o, --open', 'Open brower')
   .option('-simple, --simple', 'Use simple dev server')
+  .option('-v2, --v2', 'Use simple dev server for Vue2.x')
   .action(require('../lib/cli-server/index'))
 
 program
