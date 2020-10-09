@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "koa-static": "^5.0.0"
   }
 }
